@@ -6,12 +6,12 @@
   <% else %>
     <img src="https://wallpaperplay.com/walls/full/d/b/c/129047.jpg" alt="", style="object-position: center;">
     <!-- AUDIO PLAYER TO GO HERE 👇 -->
-    <div id="waveform" class="relative-banner" data-audio="http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3">
+    <div id="waveform" class="relative-banner" data-audio="<%= cl_asset_path @project.video.key %>">
     </div>
      <div class="wave-controls">
       <i id="waveform-play" class="fas fa-play-circle"></i>
       <i id="waveform-pause"class="fas fa-pause-circle"></i>
-    </div>  
+    </div>
   <!-- AUDIO PLAYER TO GO HERE 👆 -->
   <% end %>
 </div>

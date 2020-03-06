@@ -40,7 +40,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :description, :media_type, :published)
+    params.require(:project).permit(:title, :description, :media_type, :published, :video)
   end
 
   def find_project

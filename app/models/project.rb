@@ -4,7 +4,7 @@ class Project < ApplicationRecord
   has_one :category, through: :project_categories
   has_many :comments, dependent: :destroy
   has_one_attached :photo
-  has_one_attached :audio_file
+  has_one_attached :video
 
   MEDIA_TYPE = ['audio', 'video']
 

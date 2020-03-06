@@ -11,7 +11,7 @@
               <%= f.input :media_type, as: :radio_buttons, collection: Project::MEDIA_TYPE, label: false, prompt: 'Select media type' %>
 
               <%= f.label 'upload an audio file' %>
-              <%= f.input :audio_file, as: :file, label: false  %>
+              <%= f.input :video, as: :file, resource_type: video, label: false  %>
               <%= f.label 'or add a video' %>
               <%= f.input :video_url, label: false, placeholder: 'embed link'  %>
               <%= f.button :submit, value: 'add project', class: 'btn-dash' %>
