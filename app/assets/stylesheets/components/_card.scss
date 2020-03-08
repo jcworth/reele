@@ -297,3 +297,52 @@
     }
   }
 }
+
+////////////////////////////////////////////
+////////////// PROFILE CARD ////////////////
+////////////////////////////////////////////
+
+.profile-card {
+
+  .profile-card-content {
+    background: white;
+    // height: 70%;
+    width: 100%;
+    border-radius: 5px;
+    // border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    .profile-card-info {
+      padding: 20px;
+
+      .proj-title {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+
+      .card-separator {
+        background: lightgrey;
+        height: 1px;
+        width: 80%;
+        margin: auto;
+      }
+    }
+
+    .project-avatar {
+      border-radius: 50%;
+      height: 184px;
+      width: 184px;
+      object-fit: cover;
+      padding: 1px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .profile-card-image {
+
+    }
+  }
+
+  p {
+    padding: 10px 0px;
+    margin: 0;
+  }
+}

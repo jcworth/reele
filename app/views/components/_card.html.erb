@@ -31,3 +31,26 @@
     <% end %>
   </div>
 <% end %>
+
+
+<div class="profile-card">
+  <div class="profile-card-content">
+    <div class="profile-card-info">
+      <h6 class="proj-title"> <%= @user.username %></h6>
+      <div class="d-flex justify-content-around">
+        <p><%= "Available" if @user.available %></p>
+        <p>London</p>
+      </div>
+      <div class="card-separator"></div>
+      <p>Leland Tyler Wayne, professionally known as Metro Boomin,
+        is an American record producer, record executive, songwriter, and DJ.</p>
+      <div class="card-separator"></div>
+      <p><strong>Latest project:</strong></p><%= link_to @user.projects.last.title, project_path(@user.projects.last) %>
+
+    </div>
+      <div class="d-flex justify-content-center pb-2">
+        <%= cl_image_tag current_user.photo.key, class: 'project-avatar' %>
+      </div>
+  </div>
+</div>
+
