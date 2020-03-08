@@ -315,7 +315,7 @@
     .profile-card-info {
       padding: 20px;
 
-      .proj-title {
+      .profile-info-bold {
         font-size: 1.1em;
         font-weight: 600;
       }
@@ -323,26 +323,88 @@
       .card-separator {
         background: lightgrey;
         height: 1px;
-        width: 80%;
+        width: 70%;
         margin: auto;
       }
     }
 
     .project-avatar {
       border-radius: 50%;
-      height: 184px;
-      width: 184px;
+      height: 176px;
+      width: 176px;
       object-fit: cover;
       padding: 1px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
     .profile-card-image {
-
+      display: flex;
+      justify-content: center;
+      padding-bottom: 16px;
     }
   }
 
   p {
     padding: 10px 0px;
     margin: 0;
+  }
+}
+
+
+////////// Long card //////////
+
+.profile-card-long {
+  display: flex;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 50%;
+
+  .project-avatar {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+    padding: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .profile-card-image {
+      display: flex;
+      justify-content: center;
+      padding: 12px 12px;
+  }
+  .profile-card-content {
+    display: flex;
+    // background: white;
+    // // height: 70%;
+    // width: 100%;
+    // border-radius: 5px;
+    // // border: 1px solid black;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    // .card-separator-right {
+    //   background: lightgrey;
+    //   height: 70%;
+    //   width: 1px;
+    //   margin: auto;
+    // }
+
+    .profile-card-info {
+      padding: 20px;
+
+      .profile-info-bold {
+        font-size: 1.1em;
+        font-weight: 600;
+        width: 150px;
+      }
+
+    }
+  }
+
+  .profile-bio {
+    padding: 5px 0px;
+    margin: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 }
