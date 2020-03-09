@@ -9,7 +9,9 @@ const profileSortable = () => {
       swap: true,
       put: true,
       // onDrop: function (evt) {
-      //   evt.oldIndex;  // element index within parent
+      //   evt.currentTarge.classList.add('.project-card');
+      //   evt.currentTarge.classList.remove('.user-featured-project-card');
+
       // },
       group: 'projects',
       store: {
@@ -26,6 +28,16 @@ const profileSortable = () => {
   });
   };
 };
+
+// const button = document.getElementById('clickme');
+
+// button.addEventListener('click', (event) => {
+//   event.currentTarget.innerText = "Bingo!";
+//   event.currentTarget.classList.add('disabled');
+//   event.currentTarget.setAttribute('disabled', '');
+//   const audio = new Audio('../sound.mp3');
+//   audio.play();
+// });
 
 const featuredSortable = ( ) => {
   const featured = document.getElementById('featured-project');
