@@ -1,7 +1,7 @@
   <!-- NEED TO CHANGE PATH OF THIS LINK TO PROJECT SHOW -->
 <% @published_projects[0..-2].each do |project| %>
   <% if project.published %>
-    <div class="project-card">
+    <div class="project-card" data-id="<%= project.id %>">
       <%= link_to project_path(project) do %>
         <div class="project-card-content">
           <% if project.photo != nil %>

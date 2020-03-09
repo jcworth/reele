@@ -25,8 +25,10 @@ import "bootstrap";
 
 import WaveSurfer from "wavesurfer.js";
 
-// IMPORT SORTABLE FUNCTION
+// IMPORT SORTABLE FUNCTIONS
 import { initSortable } from '../components/sortable';
+import { profileSortable } from '../components/profile_sortable'
+// import { projectFeature, projects } from '../components/_profile_sortable.js'
 
 const audioDiv = document.querySelector('#waveform')
 if (audioDiv) {
@@ -61,5 +63,6 @@ document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   // [...]
   initSortable();
+  profileSortable();
 });
 
