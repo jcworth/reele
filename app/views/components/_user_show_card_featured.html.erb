@@ -3,7 +3,7 @@
 <% if @published_projects.empty? %>
   <h3 class="text-center">No projects yet!</h3>
 <% else %>
-  <div class="user-featured-project-card">
+  <div class="user-featured-project-card" data-id="<%= @published_projects.last.id %>">
     <%= link_to project_path(@published_projects.last) do %>
       <div class="user-featured-project-card-content">
         <% if @published_projects.last.photo != nil %>
