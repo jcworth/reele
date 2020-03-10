@@ -18,6 +18,7 @@
 
 .btn-flat {
   color: white;
+  font-weight: bold;
   padding: 8px 24px;
   border-radius: 4px;
   background: #1EDD88;
@@ -27,10 +28,12 @@
 .btn-flat:hover {
   background: #1BCB7F;
   color: white;
+  font-weight: bold;
 }
 
 .btn-gradient {
   color: white;
+  font-weight: bold;
   padding: 8px 24px;
   border-radius: 4px;
   font-weight: bold;
@@ -42,6 +45,7 @@
 .btn-gradient:hover {
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
+  font-weight: bold;
 }
 
 ////////////////////////////////////////////
@@ -57,39 +61,43 @@
 ////////////////////////////////////////////
 
 .btn-dash {
-  color: black;
+  color: white;
+  font-weight: bold;
   padding: 8px 24px;
   border-radius: 4px;
-  background: lightgrey;
+  background: #444eff;
   transition: background 0.2s ease;
 
   &:hover {
-    background: darkgrey;
+    background: rgba(68, 78, 255, 0.8);
     color: white;
+    font-weight: bold;
     text-decoration: none;
   }
 }
 
 .btn-dash-lg {
-  color: black;
+  color: white;
+  font-weight: bold;
   padding: 40px;
   border-radius: 4px;
-  background: lightgrey;
+  background: #444eff;
   transition: background 0.2s ease;
 
   &:hover {
-    background: darkgrey;
+    background: rgba(68, 78, 255, 0.8);
     color: white;
+    font-weight: bold;
     text-decoration: none;
   }
 }
 
 .btn-dash-sm {
-  color: grey;
+  color: #444eff ;
   transition: background 0.2s ease;
 
   &:hover {
-    color: black;
+    color: rgba(68 , 78, 255, 0.8);
     text-decoration: none;
   }
 }

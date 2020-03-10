@@ -1,8 +1,13 @@
+
 .navbar-lewagon {
-  // display: flex;
 
   justify-content: space-between;
-  background: white;
+  background: black;
+  color: white;
+
+  a {
+    color: white;
+  }
 
    .navbar-brand {
     display: flex;
@@ -17,6 +22,7 @@
       margin-bottom: 0;
       font-size: 1.7em;
       letter-spacing: 0.7px;
+      color: white;
     }
   }
 
@@ -25,10 +31,12 @@
 
     .nav-item {
       margin-left: 12px;
+      color: white;
     }
   }
 
   .hamburger {
+    color: white;
     height: 40px;
     width: 40px;
   }
